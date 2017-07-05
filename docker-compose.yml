@@ -1,6 +1,8 @@
 version: '2'
 services:
   couchdb:
+    ports:
+     - "5984:5984"
     image: "couchdb:1.6"
     volumes:
      - ./couchdb_volume:/usr/local/var/lib/couchdb
